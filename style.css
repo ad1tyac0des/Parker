@@ -93,6 +93,10 @@ img {
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
 }
 
+.img7 {
+    object-position: right center;
+}
+
 .website-content {
     position: absolute;
     top: 0;
@@ -125,6 +129,7 @@ nav > div{
 
 .site-info{
     text-align: center;
+    white-space: nowrap;
 }
 
 .menu{
@@ -170,5 +175,11 @@ h1 span{
 
     .offset{
         right: -5px;
+    }
+}
+
+@media (max-width: 700px) {
+    .site-info{
+        display: none;
     }
 }

@@ -79,12 +79,21 @@ document.addEventListener("DOMContentLoaded", function () {
         delay: 9,
     });
 
-    gsap.to(".hero", {
-        scale: 1.25,
-        duration: 3,
-        ease: "power3.inOut",
-        delay: 9,
-    });
+    if (window.innerWidth < 500) {
+        gsap.to(".hero", {
+            scale: 1.4,
+            duration: 3,
+            ease: "power3.inOut",
+            delay: 9,
+        });
+    } else {
+        gsap.to(".hero", {
+            scale: 1.25,
+            duration: 3,
+            ease: "power3.inOut",
+            delay: 9,
+        });
+    }
 
     gsap.to("nav", {
         y: 0,
