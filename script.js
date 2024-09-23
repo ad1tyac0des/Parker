@@ -5,6 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const digit2 = document.querySelector(".digit-2");
     const digit3 = document.querySelector(".digit-3");
 
+    (function disableRtCl() {
+        const images = document.querySelectorAll("img");
+        images.forEach((image) => {
+            image.addEventListener("contextmenu", function (e) {
+                e.preventDefault();
+            });
+        });
+    })();
+
     function splitTextIntoSpans(selector) {
         var element = document.querySelector(selector);
         if (element) {
