@@ -2,6 +2,8 @@
 
 This project showcases a unique image revealing animation and a sleek, modern design. The page features a preloader with a counter animation, followed by a series of images that are revealed in sequence, creating an engaging and dynamic user experience.
 
+![HomeSS](Assets/Images/heropage.png)
+
 ## Features
 
 - Preloader with animated counter
